@@ -60,9 +60,10 @@ my %patterns_re = (
 
     ## USPS
     # Source: https://tools.usps.com/go/TrackConfirmAction!input.action
+    # Note: Amount of prefixes in use by USPS has expanded.
     usps => qr/^
         (?:
-            (94001|92055|94073|93033|92701|92088|92021)\d{17} |
+            9[1-5]\d{20} |
             82\d{8} |
             [A-Z]{2}\d{9}US
         )
